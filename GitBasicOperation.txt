@@ -1,0 +1,49 @@
+本地创建仓库，
+git init
+
+本地库创建配置文件 .gitignore
+文件内每行填写一个文件名称
+被配置的文件将不会被提交到远端库
+
+本地添加文件
+单个文件
+git add 文件名
+所有文件
+git add *
+本地提交文件
+git commit -m “提交内容的备注说明”
+
+
+连接远程仓库
+git remote add 创建的仓库名称 git地址
+变更远程仓库地址
+git remote set-url 创建的仓库名称 新的git地址
+
+提交到远程仓库
+git push 创建的仓库名称 代码提交到的分支名称
+
+创建分支，自动切换到新创建的分支
+git checkout -b 分支名称
+
+删除分支
+git checkout -d 分支名称
+
+切换分支
+git checkout 分支名称
+
+更新远端仓库的改动
+git pull 仓库名称 分支名称
+
+在当前分支上合并其他分支
+git merge 分支名称
+
+在本地为当前分支标记版本号
+git log 
+查询出某一提交的版本操作的“默认版本号”dc7fee95b612dbdc71d2591ceb507958ffb65076
+git tag 版本号 “默认版本号”
+
+提交到远端仓库版本号
+git push 仓库名词 分支名称 --tags
+
+克隆远端仓库
+git clone git地址
